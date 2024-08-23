@@ -1,0 +1,20 @@
+<?php
+
+// define namespace
+
+use Spryker\Zed\IncrementalMigration\Dependency\IncrementalMigrationPluginInterface;
+use Spryker\Zed\Kernel\Communication\AbstractPlugin;
+use Symfony\Component\Console\Output\OutputInterface;
+
+class {{ className }} extends AbstractPlugin implements IncrementalMigrationPluginInterface
+{
+    public function isApplicable(): bool
+    {
+        return true;
+    }
+
+    public function execute(OutputInterface $output): void
+    {
+        // todo: implement migration
+    }
+}
